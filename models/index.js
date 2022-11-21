@@ -3,6 +3,8 @@ const Blog = require('./blog');
 
 // User.hasMany(Blog, { foreignKey: 'name_id'})
 
-// Blog.hasOne(User, { foreignKey: 'username'})
-
+Blog.belongsTo(User, {
+    foreignKey: 'name_id',
+  });
+  
 module.exports = { User, Blog }
