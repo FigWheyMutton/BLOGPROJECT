@@ -19,7 +19,7 @@ Blog.init(
               isEmail: true,
             },
           },
-        username: {
+        name_id: {
             type: DataTypes.STRING,
             allowNull: false,
           },
@@ -36,3 +36,5 @@ Blog.init(
       modelName: 'user',
     }
   );
+
+  module.exports = Blog;
